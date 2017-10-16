@@ -33,17 +33,22 @@ html, body {
 	margin:0px;
 	display:inline-block;
 	margin-top:12px;
+	cursor:default;
 }
 
 #back-button {
 	width:65px;
 	height:35px;
-	box-shadow:inset 0 0 0 1px #000;
 	position:absolute;
 	left:8px;
 	top:11px;
 	overflow:hidden;
 	text-align:center;
+	display:none;
+}
+
+#back-button > img {
+	margin-top:3px;
 }
 
 @media only screen and (max-width:425px) {
@@ -231,5 +236,90 @@ html, body {
 		margin-top:7.5px;
 	}
 
+
+}
+
+@media only  screen and (min-width:769px) {
+
+	#main-menu-mobile,
+	#mobile-tools-section,
+	#menu-options-mobile {
+		display:none;
+	}
+
+	/*This will be the main menu to open the tools*/
+	#main-menu-laptop {
+		width:100vw;
+		height:8em;
+		background-color:#dcdcdc;
+		overflow:hidden;
+		position:absolute;
+		left:0px;
+		top:3.5em;
+		box-shadow:inset 0 0 5px #484848;
+	}
+
+	#in-main-slide {
+		width:calc(100vw - 6em);
+		height:5em;
+		overflow:hidden;
+		position:absolute;
+		top:1.5em;
+		left:3em;
+	}
+
+	#interior-menu-options {
+		width:calc(6em * 7);
+		height:5em;
+		margin:auto;
+	}
+
+	.menu-options {
+		height:4em;
+		width:4em;
+		border-radius:50%;
+		background-color:#fff;
+		box-shadow:0 0 5px #484848;
+		margin-left:1em;
+		margin-right:1em;
+		margin-top:0.5em;
+		float:left;
+		overflow:hidden;
+		text-align:center;
+	}
+
+	.menu-options > h3 {
+		color:#484848;
+		text-transform:uppercase;
+		font-size:1.5em;
+		margin-top:1.35em;
+		margin-bottom:0px;
+		line-height:0px;
+		cursor:default;
+	}
+
+	.left-click-menu {
+		width:4em;
+		height:4em;
+		box-shadow:0 0 5px #484848;
+		border-radius:50%;
+		position:absolute;
+		left:-2em;
+		top:calc(4em / 2);
+		background-color:#fff;
+		display:none;
+	}
+
+	.right-click-menu {
+		width:4em;
+		height:4em;
+		box-shadow:0 0 5px #484848;
+		border-radius:50%;
+		position:absolute;
+		right:-2em;
+		top:calc(4em / 2);
+		background-color:#fff;
+		display:none;
+	}
 
 }
