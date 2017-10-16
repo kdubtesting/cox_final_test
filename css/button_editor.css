@@ -1,0 +1,50 @@
+@media only screen and (max-width:425px) {
+
+	/*This is the button preview area*/
+	#button-preview-area {
+		width:100%;
+		height:auto;
+		background-color:#dcdcdc;
+		padding:1em 0px;
+		text-align:center;
+		overflow:hidden;
+	}
+
+	#button-pre {
+		padding:5px 15px;
+		border:2px solid #fff;
+		color:#fff;
+		background-color:transparent;
+		font-size:16px;
+		text-transform:uppercase;
+		font-weight:normal;
+	}
+
+	/*This is the button text editor*/
+	#button-text-editor,
+	/*This is the web link editor*/
+	#web-link-editor {
+		width:100%;
+		height:auto;
+		background-color:#dcdcdc;
+		padding:2em 0px;
+		text-align:center;
+	}
+
+	#button-text,
+	#web-text {
+		margin:1em 0px;
+		background-color:transparent;
+		outline:none;
+		text-align:center;
+		width:80%;
+		margin:auto;
+		padding:5px 0px;
+		font-size:16px;
+		font-weight:normal;
+		border:none;
+		border-bottom:2px solid #484848;
+		color:#484848;
+	}
+
+}

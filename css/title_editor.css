@@ -1,0 +1,61 @@
+@media only screen and (max-width:425px) {
+
+	/*This is the title preview*/
+	#title-preview {
+		width:100%;
+		height:auto;
+		background-color:#dcdcdc;
+		padding:1em 0px;
+		text-align:center;
+	}
+
+	#title-pre {
+		font-size:21px;
+		padding:5px 15px;
+		border:2px solid #fff;
+		display:inline-block;
+		color:#fff;
+		text-transform:uppercase;
+		font-weight:lighter;
+		margin:1em 0px;
+	}
+
+	/*This is the title text editor*/
+	#title-text-editor {
+		width:100%;
+		height:auto;
+		background-color:#dcdcdc;
+		padding:2em 0px;
+		text-align:center;
+	}
+
+	#title-editor {
+		margin:1em 0px;
+		background-color:transparent;
+		outline:none;
+		text-align:center;
+		width:80%;
+		margin:auto;
+		padding:5px 0px;
+		font-size:16px;
+		font-weight:normal;
+		border:none;
+		border-bottom:2px solid #484848;
+		color:#484848;
+	}
+
+	/*This is the font size editor*/
+	.font-size-editor,
+	/*This is the font family editor*/
+	.font-family-editor,
+	/*This is the text transform editor*/
+	.text-transform-editor {
+		width:100%;
+		height:auto;
+		background-color:#dcdcdc;
+		padding:1em 0px;
+		text-align:center;
+	}
+
+
+}

@@ -143,6 +143,71 @@ html, body {
 		right:0px;
 	}
 
+	/*This is actual tool section*/
+	#mobile-tools-section {
+		width:100vw;
+		height:calc(100vh - 6em);
+		background-color:#fff;
+		overflow-x:hidden;
+		overflow-y:scroll;
+		position:absolute;
+		z-index:10000000;
+		left:0px;
+		bottom:2.5em;
+		transition:all 0.5s ease;
+	}
+
+	#in-mobile-tools-section {
+		width:100%;
+		height:auto;
+	}
+
+	.specific-tools-section {
+		height:auto;
+		width:100%;
+		margin-bottom:2.5em;
+	}
+
+	.tools {
+		width:90vw;
+		height:auto;
+		overflow:hidden;
+		margin-left:5vw;
+		margin-top:1em;
+		box-shadow:0 0 5px #484848;
+		position:relative;
+	}
+
+	.head-section {
+		width:100%;
+		height:3em;
+		background-color:#f3f3f3;
+		overflow:hidden;
+		text-align:center;
+	}
+
+	.head-section > h4 {
+		font-size:13px;
+		font-weight:lighter;
+		text-transform:uppercase;
+		margin-top:17px;
+		cursor:default;
+	}
+
+	.close-tools-sections {
+		width:3em;
+		height:3em;
+		text-align:center;
+		overflow:hidden;
+		position:absolute;
+		top:0px;
+		right:0px;
+	}
+
+	.close-tools-sections > img {
+		margin-top:12px;
+	}
+
 	/*This is the bottom menu*/
 	#menu-options-mobile {
 		width:100vw;

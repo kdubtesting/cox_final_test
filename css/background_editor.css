@@ -1,0 +1,109 @@
+@media only screen and (max-width:425px) {
+
+	/*This is the background preview*/
+	#background-preview {
+		width:100%;
+		height:25em;
+		box-shadow:inset 0 0 0 800px rgba(0,0,0,0.4);
+		background-size:cover;
+		background-repeat:no-repeat;
+		background-position:center center;
+		background-image:url("../img/hotel_1.jpg");
+	}
+
+	/*This is background image selector tool*/
+	#background-image-selector {
+		width:100%;
+		height:20em;
+		overflow:hidden;
+		position:relative;
+	}
+
+	#in-background-image-selector {
+		width:calc(6 * 90vw);
+		height:100%;
+	}
+
+	.left-click {
+		width:3em;
+		height:3em;
+		background-color:#fff;
+		border-radius:50%;
+		position:absolute;
+		box-shadow:0 0 5px #484848;
+		left:-1.5em;
+		top:calc(17em / 2);
+	}
+
+	.right-click {
+		width:3em;
+		height:3em;
+		background-color:#fff;
+		border-radius:50%;
+		position:absolute;
+		box-shadow:0 0 5px #484848;
+		right:-1.5em;
+		top:calc(17em / 2);
+	}
+
+	.color-selector {
+		width:100%;
+		height:20em;
+		background-color:#dcdcdc;
+		position:relative;
+		overflow:hidden;
+	}
+
+	.parent-colors-selector {
+		width:100%;
+		height:100%;
+		text-align:center;
+		overflow:hidden;
+	}
+
+	.shade-colors-selectors {
+		width:100%;
+		height:100%;
+		text-align:center;
+		overflow:hidden;
+		position:absolute;
+		top:100%;
+		left:0px;
+		background-color:#dcdcdc;
+		transition:all 0.5s ease;
+	}
+
+	.parent-colors-selector > h4,
+	.shade-colors-selectors > h4 {
+		text-transform:uppercase;
+		font-weight:lighter;
+		font-size:18px;
+		padding:5px 15px;
+		border:2px solid #484848;
+		display:inline-block;
+		color:#484848;
+		margin-top:1em;
+		margin-bottom:0px;
+	}
+
+	.parent-colors {
+		width:90%;
+		height:13em;
+		margin:auto;
+		margin-top:1em;
+	}
+
+	.p-colors {
+		width:2.5em;
+		height:2.5em;
+		border-radius:50%;
+		box-shadow:inset 0 0 0 5px #fff, 0 0 5px #484848;
+		float:left;
+		margin-left:calc(((81vw / 3) - 2.5em) / 2);
+		margin-right:calc(((81vw / 3) - 2.5em) / 2);
+		margin-top:1em;
+		margin-bottom:1em;
+		overflow:hidden;
+	}
+
+}
