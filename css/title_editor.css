@@ -1,4 +1,3 @@
-@media only screen and (max-width:425px) {
 
 	/*This is the title preview*/
 	#title-preview {
@@ -31,7 +30,7 @@
 
 	#title-editor {
 		margin:1em 0px;
-		background-color:transparent;
+		background-color:#fff;
 		outline:none;
 		text-align:center;
 		width:80%;
@@ -39,8 +38,7 @@
 		padding:5px 0px;
 		font-size:16px;
 		font-weight:normal;
-		border:none;
-		border-bottom:2px solid #484848;
+		border:2px solid #484848;
 		color:#484848;
 	}
 
@@ -57,5 +55,43 @@
 		text-align:center;
 	}
 
+	.left-click-font-up {
+		height:3em;
+		width:20%;
+		text-align:center;
+		overflow:hidden;
+		float:left;
+		margin-left:20%;
+	}
 
-}
+	.font-size {
+		height:3em;
+		width:20%;
+		text-align:center;
+		overflow:hidden;
+		float:left;
+	}
+
+	.font-size-text {
+		text-transform:uppercase;
+		font-weight:lighter;
+		color:#484848;
+
+	}
+
+	.right-click-font-down {
+		height:3em;
+		width:20%;
+		text-align:center;
+		overflow:hidden;
+	}
+
+	.font-button {
+		width:2em;
+		height:2em;
+		border-radius:50%;
+		background-color:#fff;
+		box-shadow:0 0 5px #484848;
+		margin:auto;
+		margin-top:0.5em;
+	}
