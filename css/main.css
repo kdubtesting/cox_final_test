@@ -264,36 +264,10 @@ html, body {
 		position:relative;
 	}
 
-	.left-click-menu {
-		height:2.5em;
-		width:2.5em;
-		background-color:#00008B;
-		position:absolute;
-		z-index:100;
-		top:0px;
-		left:0em;
-		text-align:center;
-		overflow:hidden;
-	}
-
-	.right-click-menu {
-		height:2.5em;
-		width:2.5em;
-		background-color:#00008B;
-		position:absolute;
-		z-index:100;
-		top:0px;
-		right:0em;
-		text-align:center;
-		overflow:hidden;
-	}
-
 	#in-main-slide {
 		height:100%;
 		width:calc(7 * 13em);
 		background-color:#00BFFF;
-		padding-left:2.5em;
-		padding-right:2.5em;
 	}
 
 	.menu-option-laptop {
@@ -420,36 +394,10 @@ html, body {
 		position:relative;
 	}
 
-	.left-click-menu {
-		height:2.5em;
-		width:2.5em;
-		background-color:#00008B;
-		position:absolute;
-		z-index:100;
-		top:0px;
-		left:0em;
-		text-align:center;
-		overflow:hidden;
-	}
-
-	.right-click-menu {
-		height:2.5em;
-		width:2.5em;
-		background-color:#00008B;
-		position:absolute;
-		z-index:100;
-		top:0px;
-		right:0em;
-		text-align:center;
-		overflow:hidden;
-	}
-
 	#in-main-slide {
 		height:100%;
 		width:calc(7 * 13em);
 		background-color:#00BFFF;
-		padding-left:2.5em;
-		padding-right:2.5em;
 	}
 
 	.menu-option-laptop {
