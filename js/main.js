@@ -98,12 +98,12 @@ closeSection(winW);
 $(window).resize(function() {
 
 	var winWR = $(window).width();
+	var winHR = $(window).height();
 
-	openMenu(winWR, menuOA, menuO);
+	openMenu(winWR, mobileHeadA, mobileHead);
 
 	closeTools(winWR, closeToolSecA, closeToolSec);
 
 	closeSection(winWR);
-
 
 });
