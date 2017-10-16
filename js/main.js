@@ -5,105 +5,77 @@ var mobileHead = $(".mobile-heading");
 var mobileHeadA = new Array();
 var mobileMenu = $(".mobile-menu");
 
-//This is the close open to close the tools
-var closeToolSec = $(".close-tools-sections");
-var closeToolSecA = new Array();
-var tools = $(".tools");
+//This will change the text for the convention title
+$("#title-editor").keyup(function() {
 
-function fillArray(arrA, arr) {
+	var textChange = $(this).val();
 
-	for(var i = 0; i < arr.length; i++) {
+	$("#title-pre").html(textChange);
+});
 
-		arrA[i] = arr[i];
+$("#button-text").keyup(function() {
 
-	}
+	var textChange = $(this).val();
 
-}
-
-function openMenu(winW, menuOA, menuO) {
-
-	fillArray(menuOA, menuO);
-
-	if(winW <= 425) {
-
-		for(var i = 0; i < menuO.length; i++) {
-
-			$(menuO[i]).click(function() {
-
-				var n = menuOA.indexOf(this);
-				$(mobileMenu[n]).css("margin-left", "-8em");
-
-			});
-
-		}
-
-	} else if(winW >= 426 && winW <= 768) {
-
-		for(var i = 0; i < menuO.length; i++) {
-
-			$(menuO[i]).click(function() {
-
-				var n = menuOA.indexOf(this);
-				$(mobileMenu[n]).css("margin-left", "-8em");
-
-			});
-
-		}
-		
-	}
-
-}
-
-function closeTools(winW, closeTA, closeT) {
-
-	fillArray(closeTA, closeT);
-
-	if(winW <= 425) {
-
-		for(var i = 0; i < closeT.length; i++) {
-
-			$(closeT[i]).click(function() {
-
-				var n = closeTA.indexOf(this);
-				$(tools[n]).css("height", "3em");
-
-			});
-
-		}
-
-	}
-
-}
-
-function closeSection(winW) {
-
-	if(winW <= 425) {
-
-		$("#back-button").click(function() {
-
-			$("#mobile-tools-section").css("bottom", "100vh");
-
-		});
-
-	}
-
-}
-
-openMenu(winW, mobileHeadA, mobileHead);
-
-closeTools(winW, closeToolSecA, closeToolSec);
-
-closeSection(winW);
-
-$(window).resize(function() {
-
-	var winWR = $(window).width();
-	var winHR = $(window).height();
-
-	openMenu(winWR, mobileHeadA, mobileHead);
-
-	closeTools(winWR, closeToolSecA, closeToolSec);
-
-	closeSection(winWR);
+	$("#button-pre").html(textChange);
 
 });
+
+
+//This is the font size editor
+var fontButton = $(".font-button")
+var fontButtonA = new Array();
+var fontSizeText = $(".font-size-text");
+
+for(var i = 0; i < fontButton.length; i++) {
+
+	fontButtonA[i] = fontButton[i];
+
+}
+
+for(var i = 0; i < fontButton.length; i++) {
+
+	$(fontButton[i]).click(function() {
+
+		var n = fontButtonA.indexOf(this);
+
+		if(n == 0) {
+
+			var fontText = $(fontSizeText[0]).html();
+
+			var fontTextP = parseInt(fontText);
+
+			fontTextP++;
+
+			$("#title-pre").css("font-size", fontTextP + "px");
+
+			if(fontTextP <= 35) {
+
+				$(fontSizeText[0]).html(fontTextP);
+
+			}
+
+		}
+
+		if(n == 1) {
+
+			var fontText = $(fontSizeText[0]).html();
+
+			var fontTextP = parseInt(fontText);
+
+			fontTextP--;
+
+			$("#title-pre").css("font-size", fontTextP + "px");
+
+			if(fontTextP >= 10) {
+
+				$(fontSizeText[0]).html(fontTextP);
+
+			}
+
+		}
+
+	});
+
+}
+
