@@ -209,6 +209,15 @@ $("#single-date").click(function() {
 
 });
 
+//This changes the text of the single date
+$("#single-date-editor").keyup(function() {
+
+	var textChange = $(this).val();
+
+	$("#single-date-pre").html(textChange);
+
+});
+
 $("#multiple-dates").click(function() {
 
 	$(this).css("background-color", "#484848");

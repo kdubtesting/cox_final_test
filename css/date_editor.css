@@ -20,14 +20,29 @@ tools in the date editor*/
 	outline:none;
 }
 
+#single-date {
+	background-color:#484848;
+	color:#f3f3f3;
+}
+
 /*This is the date preview area*/
 #date-preview {
 	width:100%;
-	height:6em;
+	height:auto;
+	padding:1em 0px;
 	background-color:#dcdcdc;
 	text-align:center;
 	overflow:hidden;
 	position:relative;
+}
+
+#single-date-pre {
+	font-weight:lighter;
+	text-transform:uppercase;
+	color:#fff;
+	font-size:18px;
+	margin-top:1em;
+	margin-bottom:1em;
 }
 
 /*This is the single date editor*/
@@ -43,6 +58,12 @@ tools in the date editor*/
 	background-color:#dcdcdc;
 	padding:2em 0px;
 	text-align:center;
+}
+
+#first-date-style,
+#bet-text-style,
+#second-date-style {
+	display:none;
 }
 
 #single-date-editor,
@@ -61,4 +82,3 @@ tools in the date editor*/
 	border:2px solid #484848;
 	color:#484848;
 }
- 
