@@ -236,3 +236,22 @@ $("#multiple-dates").click(function() {
 
 });
 
+//This is to move the font selectors
+var leftFontClick = $(".left-font-click");
+var rightFontClick = $(".right-font-click");
+var inFontList = $(".in-font-list");
+var titleFamilyArea = $(".title-family-area");
+
+$(leftFontClick[0]).click(function() {
+
+	$(titleFamilyArea[0]).css("font-family", "bebas_neue");
+	$(inFontList[0]).css("margin-left", "-90vw");
+
+});
+
+$(rightFontClick[0]).click(function() {
+
+	$(inFontList[0]).css("margin-left", "0vw");
+
+});
+
