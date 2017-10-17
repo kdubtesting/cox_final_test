@@ -2,6 +2,57 @@
 	display:none;
 }
 
+/*These are fonts that will added to the website*/
+@font-face {
+	font-family:bebas_neue;
+	src:url(../font/bebas_neue/BebasNeue.otf);
+}
+
+@font-face {
+	font-family:europe_underground;
+	src:url(../font/europe_underground/EuropeUnderground_black.ttf);
+}
+
+@font-face {
+	font-family:gatsby;
+	src:url(../font/gatsby/GatsbyFLF.ttf);
+}
+
+@font-face {
+	font-family:lato;
+	src:url(../font/lato/Lato-Regular.ttf);
+}
+
+@font-face {
+	font-family:lilly_of_the_valley;
+	src:url(../font/lily_of_the_valley/Lily of the Valley.ttf);
+}
+
+@font-face {
+	font-family:monterey;
+	src:url(../font/monterey/MontereyFLF.ttf);
+}
+
+@font-face {
+	font-family:raleway;
+	src:url(../font/raleway/Raleway-Regular.ttf);
+}
+
+@font-face {
+	font-family:europe_underground;
+	src:url(../font/europe_underground/EuropeUnderground_black.ttf);
+}
+
+@font-face {
+	font-family:vertigo;
+	src:url(../font/vertigo/VertigoFLF.ttf);
+}
+
+@font-face {
+	font-family:vonique_64;
+	src:url(../font/vonique_64/Vonique 64.ttf);
+}
+
 html, body {
 	width:100%;
 	height:100%;

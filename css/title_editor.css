@@ -76,7 +76,6 @@
 		text-transform:uppercase;
 		font-weight:lighter;
 		color:#484848;
-
 	}
 
 	.right-click-font-down {
@@ -94,4 +93,18 @@
 		box-shadow:0 0 5px #484848;
 		margin:auto;
 		margin-top:0.5em;
+	}
+
+	#family-test-block {
+		width:70%;
+		height:auto;
+		padding:0.5em 0px;
+		margin:auto;
+		overflow:hidden;
+	}
+
+	#title-family-area {
+		font-weight:normal;
+		text-transform:uppercase;
+		color:#484848;
 	}
