@@ -188,6 +188,16 @@
 		margin-bottom:1em;
 	}
 
+	#text-transform-demo {
+		font-size:18px;
+		text-transform:uppercase;
+		padding:5px 15px;
+		border:2px solid #fff;
+		color:#fff;
+		font-weight:lighter;
+		display:inline-block;
+	}
+
 	.border-check,
 	.no-border,
 	.caps-lock,

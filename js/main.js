@@ -485,6 +485,7 @@ for(var i = 0; i < borderCheck.length; i++) {
 		if(n == 0) {
 
 			$("#title-pre").css("border", "2px solid #fff");
+			$("#text-transform-demo").css("border", "2px solid #fff");
 
 		}
 
@@ -507,6 +508,7 @@ for(var i = 0; i < noBorder.length; i++) {
 		if(n == 0) {
 
 			$("#title-pre").css("border", "2px solid transparent");
+			$("#text-transform-demo").css("border", "2px solid transparent");
 
 		}
 
@@ -532,6 +534,7 @@ for(var i = 0; i < capLock.length; i++) {
 		if(n == 0) {
 
 			$("#title-pre").css("text-transform", "uppercase");
+			$("#text-transform-demo").css("text-transform", "uppercase");
 
 		}
 
@@ -557,6 +560,7 @@ for(var i = 0; i < capUnlock.length; i++) {
 		if(n == 0) {
 
 			$("#title-pre").css("text-transform", "lowercase");
+			$("#text-transform-demo").css("text-transform", "lowercase");
 
 		}
 
@@ -581,7 +585,8 @@ for(var i = 0; i < normalFont.length; i++) {
 
 		if(n == 0) {
 
-			$("#title-pre").css("text-transform", "None");
+			$("#title-pre").css("text-transform", "none");
+			$("#text-transform-demo").css("text-transform", "none");
 
 		}
 
@@ -611,6 +616,8 @@ for(var i = 0; i < thin.length; i++) {
 
 			$("#title-pre").css("font-weight", "lighter");
 			$("#title-pre").css("font-style", "normal");
+			$("#text-transform-demo").css("font-weight", "lighter");
+			$("#text-transform-demo").css("font-style", "normal");
 
 		}
 
@@ -640,6 +647,8 @@ for(var i = 0; i < bold.length; i++) {
 
 			$("#title-pre").css("font-weight", "bold");
 			$("#title-pre").css("font-style", "normal");
+			$("#text-transform-demo").css("font-weight", "bold");
+			$("#text-transform-demo").css("font-style", "normal");
 
 		}
 
@@ -668,6 +677,7 @@ for(var i = 0; i < italic.length; i++) {
 		if(n == 0) {
 
 			$("#title-pre").css("font-style", "italic");
+			$("#text-transform-demo").css("font-style", "italic");
 
 		}
 
@@ -697,6 +707,8 @@ for(var i = 0; i < normalWeight.length; i++) {
 
 			$("#title-pre").css("font-weight", "normal");
 			$("#title-pre").css("font-style", "normal");
+			$("#text-transform-demo").css("font-weight", "normal");
+			$("#text-transform-demo").css("font-style", "normal");
 
 		}
 
