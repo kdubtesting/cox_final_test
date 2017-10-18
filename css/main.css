@@ -170,6 +170,10 @@ html, body {
 		text-align:center;
 	}
 
+	.close-section > img {
+		margin-top:20.5px;
+	}
+
 	.tool-open-section {
 		width:4em;
 		height:4em;
@@ -181,6 +185,10 @@ html, body {
 		right:8em;
 	}
 
+	.tool-open-section > img {
+		margin-top:15px;
+	}
+
 	.help-open-section {
 		width:4em;
 		height:4em;
@@ -190,6 +198,10 @@ html, body {
 		text-align:center;
 		top:0px;
 		right:4em;
+	}
+
+	.help-open-section > img {
+		margin-top:15px;
 	}
 
 	.close-help-section {
