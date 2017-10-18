@@ -206,6 +206,8 @@ $("#single-date").click(function() {
 	$(leftSideChild[4]).css("display", "none");
 	$(leftSideChild[5]).css("display", "none");
 	
+	$("#single-date-pre").css("display", "block");
+	$("#multiple-date-setup").css("display", "none");
 
 });
 
@@ -233,6 +235,10 @@ $("#multiple-dates").click(function() {
 	$(leftSideChild[3]).css("display", "block");
 	$(leftSideChild[4]).css("display", "block");
 	$(leftSideChild[5]).css("display", "block");
+
+	$("#single-date-pre").css("display", "none");
+	$("#multiple-date-setup").css("display", "block");
+
 
 });
 
