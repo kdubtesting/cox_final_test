@@ -514,5 +514,200 @@ for(var i = 0; i < noBorder.length; i++) {
 
 }
 
+for(var i = 0; i < capLock.length; i++) {
+
+	$(capLock[i]).click(function() {
+
+		var n = capLockA.indexOf(this);
+
+		$(capLock[n]).css("background-color", "#484848");
+		$(capLock[n]).css("color", "#f3f3f3");
+
+		$(normalFont[n]).css("background-color", "trasparent");
+		$(normalFont[n]).css("color", "#484848");
+
+		$(capUnlock[n]).css("background-color", "transparent");
+		$(capUnlock[n]).css("color", "#484848");
+
+		if(n == 0) {
+
+			$("#title-pre").css("text-transform", "uppercase");
+
+		}
+
+	});
+
+}
+
+for(var i = 0; i < capUnlock.length; i++) {
+
+	$(capUnlock[i]).click(function() {
+
+		var n = capUnlockA.indexOf(this);
+
+		$(capUnlock[n]).css("background-color", "#484848");
+		$(capUnlock[n]).css("color", "#f3f3f3");
+
+		$(normalFont[n]).css("background-color", "transparent");
+		$(normalFont[n]).css("color", "#484848");
+
+		$(capLock[n]).css("background-color", "transparent");
+		$(capLock[n]).css("color", "#484848");
+
+		if(n == 0) {
+
+			$("#title-pre").css("text-transform", "lowercase");
+
+		}
+
+	});
+
+}
+
+for(var i = 0; i < normalFont.length; i++) {
+
+	$(normalFont[i]).click(function() {
+
+		var n = normalFontA.indexOf(this);
+
+		$(normalFont[n]).css("background-color", "#484848");
+		$(normalFont[n]).css("color", "#f3f3f3");
+
+		$(capUnlock[n]).css("background-color", "transparent");
+		$(capUnlock[n]).css("color", "#484848");
+
+		$(capLock[n]).css("background-color", "transparent");
+		$(capLock[n]).css("color", "#484848");
+
+		if(n == 0) {
+
+			$("#title-pre").css("text-transform", "None");
+
+		}
+
+	});
+
+}
+
+for(var i = 0; i < thin.length; i++) {
+
+	$(thin[i]).click(function() {
+
+		var n = thinA.indexOf(this);
+
+		$(thin[n]).css("background-color", "#484848");
+		$(thin[n]).css("color", "#f3f3f3");
+
+		$(bold[n]).css("background-color", "transparent");
+		$(bold[n]).css("color", "#484848");
+
+		$(italic[n]).css("background-color", "transparent");
+		$(italic[n]).css("color", "#484848");
+
+		$(normalWeight[n]).css("background-color", "transparent");
+		$(normalWeight[n]).css("color", "#484848");
+
+		if(n == 0) {
+
+			$("#title-pre").css("font-weight", "lighter");
+			$("#title-pre").css("font-style", "normal");
+
+		}
+
+	});
+
+}
+
+for(var i = 0; i < bold.length; i++) {
+
+	$(bold[i]).click(function() {
+
+		var n = boldA.indexOf(this);
+
+		$(thin[n]).css("background-color", "transparent");
+		$(thin[n]).css("color", "#484848");
+
+		$(bold[n]).css("background-color", "#484848");
+		$(bold[n]).css("color", "#f3f3f3");
+
+		$(italic[n]).css("background-color", "transparent");
+		$(italic[n]).css("color", "#484848");
+
+		$(normalWeight[n]).css("background-color", "transparent");
+		$(normalWeight[n]).css("color", "#484848");
+
+		if(n == 0) {
+
+			$("#title-pre").css("font-weight", "bold");
+			$("#title-pre").css("font-style", "normal");
+
+		}
+
+	});
+
+}
+
+for(var i = 0; i < italic.length; i++) {
+
+	$(italic[i]).click(function() {
+
+		var n = italicA.indexOf(this);
+
+		$(thin[n]).css("background-color", "transparent");
+		$(thin[n]).css("color", "#484848");
+
+		$(bold[n]).css("background-color", "transparent");
+		$(bold[n]).css("color", "#484848");
+
+		$(italic[n]).css("background-color", "#484848");
+		$(italic[n]).css("color", "#f3f3f3");
+
+		$(normalWeight[n]).css("background-color", "transparent");
+		$(normalWeight[n]).css("color", "#484848");
+
+		if(n == 0) {
+
+			$("#title-pre").css("font-style", "italic");
+
+		}
+
+	});
+
+}
+
+for(var i = 0; i < normalWeight.length; i++) {
+
+	$(normalWeight[i]).click(function() {
+
+		var n = normalWeightA.indexOf(this);
+
+		$(thin[n]).css("background-color", "transparent");
+		$(thin[n]).css("color", "#484848");
+
+		$(bold[n]).css("background-color", "transparent");
+		$(bold[n]).css("color", "#484848");
+
+		$(italic[n]).css("background-color", "transparent");
+		$(italic[n]).css("color", "#484848");
+
+		$(normalWeight[n]).css("background-color", "#484848");
+		$(normalWeight[n]).css("color", "#f3f3f3");
+
+		if(n == 0) {
+
+			$("#title-pre").css("font-weight", "normal");
+			$("#title-pre").css("font-style", "normal");
+
+		}
+
+	});
+
+}
+
+
+
+
+
+
 
 
