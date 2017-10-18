@@ -487,6 +487,11 @@ for(var i = 0; i < borderCheck.length; i++) {
 			$("#title-pre").css("border", "2px solid #fff");
 			$("#text-transform-demo").css("border", "2px solid #fff");
 
+		} else if(n == 1) {
+
+			$("#single-date-setup").css("border", "2px solid #fff");
+			$("#date-transform-demo").css("border", "2px solid #fff");
+
 		}
 
 	});
@@ -509,6 +514,11 @@ for(var i = 0; i < noBorder.length; i++) {
 
 			$("#title-pre").css("border", "2px solid transparent");
 			$("#text-transform-demo").css("border", "2px solid transparent");
+
+		} else if(n == 1) {
+
+			$("#single-date-setup").css("border", "2px solid transparent");
+			$("#date-transform-demo").css("border", "2px solid transparent");
 
 		}
 
@@ -536,6 +546,11 @@ for(var i = 0; i < capLock.length; i++) {
 			$("#title-pre").css("text-transform", "uppercase");
 			$("#text-transform-demo").css("text-transform", "uppercase");
 
+		} else if(n == 1) {
+
+			$("#single-date-setup").css("text-transform", "uppercase");
+			$("#date-transform-demo").css("text-transform", "uppercase");
+
 		}
 
 	});
@@ -562,6 +577,11 @@ for(var i = 0; i < capUnlock.length; i++) {
 			$("#title-pre").css("text-transform", "lowercase");
 			$("#text-transform-demo").css("text-transform", "lowercase");
 
+		} else if(n == 1) {
+
+			$("#single-date-setup").css("text-transform", "lowercase");
+			$("#date-transform-demo").css("text-transform", "lowercase");
+
 		}
 
 	});
@@ -587,6 +607,11 @@ for(var i = 0; i < normalFont.length; i++) {
 
 			$("#title-pre").css("text-transform", "none");
 			$("#text-transform-demo").css("text-transform", "none");
+
+		} else if(n == 1) {
+
+			$("#single-date-setup").css("text-transform", "none");
+			$("#date-transform-demo").css("text-transform", "none");
 
 		}
 
@@ -619,6 +644,13 @@ for(var i = 0; i < thin.length; i++) {
 			$("#text-transform-demo").css("font-weight", "lighter");
 			$("#text-transform-demo").css("font-style", "normal");
 
+		} else if(n == 1) {
+
+			$("#single-date-setup").css("font-weight", "lighter");
+			$("#single-date-setup").css("font-style", "normal");
+			$("#date-transform-demo").css("font-weight", "lighter");
+			$("#date-transform-demo").css("font-style", "normal");
+
 		}
 
 	});
@@ -650,6 +682,13 @@ for(var i = 0; i < bold.length; i++) {
 			$("#text-transform-demo").css("font-weight", "bold");
 			$("#text-transform-demo").css("font-style", "normal");
 
+		} else if(n == 1) {
+
+			$("#single-date-setup").css("font-weight", "bold");
+			$("#single-date-setup").css("font-style", "normal");
+			$("#date-transform-demo").css("font-weight", "bold");
+			$("#date-transform-demo").css("font-style", "normal");
+
 		}
 
 	});
@@ -678,6 +717,11 @@ for(var i = 0; i < italic.length; i++) {
 
 			$("#title-pre").css("font-style", "italic");
 			$("#text-transform-demo").css("font-style", "italic");
+
+		} else if(n == 1) {
+
+			$("#single-date-setup").css("font-style", "italic");
+			$("#date-transform-demo").css("font-style", "italic");
 
 		}
 
@@ -710,11 +754,148 @@ for(var i = 0; i < normalWeight.length; i++) {
 			$("#text-transform-demo").css("font-weight", "normal");
 			$("#text-transform-demo").css("font-style", "normal");
 
+		} else if(n == 1) {
+
+			$("#single-date-setup").css("font-weight", "normal");
+			$("#single-date-setup").css("font-style", "normal");
+			$("#date-transform-demo").css("font-weight", "normal");
+			$("#date-transform-demo").css("font-style", "normal");
+
 		}
 
 	});
 
 }
+
+//This will close the entire tool section
+$("#back-button").click(function() {
+
+	$(this).css("display", "none");
+	$("#mobile-tools-section").css("bottom", "100vh");
+	$(".specific-tools-section").css("display", "none");
+
+});
+
+//This will close the entire editor
+var menuIcon = $(".menu-icon");
+var menuIconA = new Array();
+
+for(var i = 0; i < menuIcon.length; i++) {
+	menuIconA[i] = menuIcon[i];
+}
+
+for(var i = 0; i < menuIcon.length; i++) {
+
+	$(menuIcon[i]).click(function() {
+
+		var n = menuIconA.indexOf(this);
+
+		if(n == 0) {
+
+			$("#menu-options-mobile").css("bottom", "-3em");
+			$("#mobile-tools-section").css("bottom", "100vh");
+			$("#main-menu-mobile").css("bottom", "100vh");
+
+		}
+
+	});
+
+}
+
+//This will open the individual tools
+var mobileMenu = $(".mobile-menu");
+var mobileHeading = $(".mobile-heading");
+var mobileHeadingA = new Array();
+var closeSection = $(".close-section");
+var closeSectionA = new Array();
+var toolOpenSection = $(".tool-open-section");
+var toolOpenSectionA = new Array();
+
+var specificToolSection = $(".specific-tools-section");
+
+for(var i = 0; i < mobileHeading.length; i++) {
+	mobileHeadingA[i] = mobileHeading[i];
+	closeSectionA[i] = closeSection[i];
+	toolOpenSectionA[i] = toolOpenSection[i];
+}
+
+for(var i = 0; i < mobileHeading.length; i++) {
+
+	$(mobileHeading[i]).click(function() {
+
+		var n = mobileHeadingA.indexOf(this);
+
+		$(mobileMenu[n]).css("margin-left", "-8em");
+
+	});
+
+}
+
+for(var i = 0; i < toolOpenSection.length; i++) {
+
+	$(toolOpenSection[i]).click(function() {
+
+		var n = toolOpenSectionA.indexOf(this);
+
+		$("#mobile-tools-section").css("bottom", "2.5em");
+		$("#back-button").css("display", "block");
+		$(specificToolSection[n]).css("display", "block");
+
+	});
+
+}
+
+for(var i = 0; i < closeSection.length; i++) {
+
+	$(closeSection[i]).click(function() {
+
+		var n = closeSectionA.indexOf(this);
+
+		$(mobileMenu[n]).css("margin-left", "0px");
+
+	});
+
+}
+
+//This will close each of the independent sections
+var closeToolsSections = $(".close-tools-sections");
+var closeToolsSectionsA = new Array();
+var tools = $(".tools");
+
+for(var i = 0; i < closeToolsSections.length; i++) {
+	closeToolsSectionsA[i] = closeToolsSections[i];
+}
+
+for(var i = 0; i < closeToolsSections.length; i++) {
+
+	$(closeToolsSections[i]).click(function() {
+
+		var n = closeToolsSectionsA.indexOf(this);
+		$(tools[n]).css("height", "3em");
+
+	});
+
+}
+
+//This will open each independent section
+var headSection = $(".head-section");
+var headSectionA = new Array();
+
+for(var i = 0; i < headSection.length; i++) {
+	headSectionA[i] = headSection[i];
+}
+
+for(var i = 0; i < headSection.length; i++) {
+
+	$(headSection[i]).click(function() {
+
+		var n = headSectionA.indexOf(this);
+		$(tools[n]).css("height", "auto");
+
+	});
+
+}
+
 
 
 
