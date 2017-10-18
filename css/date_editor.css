@@ -45,6 +45,22 @@ tools in the date editor*/
 	margin-bottom:1em;
 }
 
+#multiple-date-setup {
+	width:100%;
+	height:auto;
+	text-align:center;
+	padding:0.5em 0px;
+	display:none;
+}
+
+#first-date-pre,
+#between-text-pre,
+#second-date-pre {
+	color:#fff;
+	font-weight:lighter;
+	text-transform:uppercase;
+}
+
 /*This is the single date editor*/
 #single-date-area,
 /*This is the first date editor for the multiple date setup*/

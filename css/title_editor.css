@@ -167,3 +167,46 @@
 		color:#484848;
 		margin-bottom:0em;
 	}
+
+	.font-setup {
+		width:90%;
+		height:auto;
+		display:flex;
+		justify-content:space-between;
+		margin:auto;
+		margin-top:1em;
+		margin-bottom:1em;
+	}
+
+	.font-thickness {
+		width:90%;
+		height:auto;
+		display:flex;
+		justify-content:space-between;
+		margin:auto;
+		margin-top:1em;
+		margin-bottom:1em;
+	}
+
+	.border-check,
+	.no-border,
+	.caps-lock,
+	.caps-unlock,
+	.normal-font,
+	.thin,
+	.bold,
+	.italic,
+	.normal-weight {
+		padding:5px 15px;
+		border:2px solid #484848;
+		background-color:transparent;
+		outline:none;
+		color:#484848;
+		text-transform:uppercase;
+		font-weight:normal;
+	}
+
+	.border-check,
+	.no-border {
+		margin-top:1em;
+	}

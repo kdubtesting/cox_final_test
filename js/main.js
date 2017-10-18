@@ -241,17 +241,162 @@ var leftFontClick = $(".left-font-click");
 var rightFontClick = $(".right-font-click");
 var inFontList = $(".in-font-list");
 var titleFamilyArea = $(".title-family-area");
+var fonts = $(".fonts");
 
-$(leftFontClick[0]).click(function() {
+function firstFontChange(i) {
 
-	$(titleFamilyArea[0]).css("font-family", "bebas_neue");
-	$(inFontList[0]).css("margin-left", "-90vw");
+	if(i >= 0 && i < 9) {
 
-});
+		$(rightFontClick[0]).click(function() {
 
-$(rightFontClick[0]).click(function() {
+			if(i < 9) {
 
-	$(inFontList[0]).css("margin-left", "0vw");
+				$(inFontList[0]).css("margin-left", "-=90vw");
+				i++;
+				var fontFamilyChange = $(fonts[i]).css("font-family");
+				$(titleFamilyArea[0]).css("font-family", fontFamilyChange);
 
-});
+			}
+
+		});
+
+	}
+
+	if(i < 9 && i >= 0) {
+
+		$(leftFontClick[0]).click(function() {
+
+			if(i > 0) {
+
+				$(inFontList[0]).css("margin-left", "+=90vw");
+				i--;
+				var fontFamilyChange = $(fonts[i]).css("font-family");
+				$(titleFamilyArea[0]).css("font-family", fontFamilyChange);
+
+			}
+
+		});
+
+	}
+
+}
+
+function secondFontChange(i) {
+
+	if(i >= 0 && i < 9) {
+
+		$(rightFontClick[1]).click(function() {
+
+			if(i < 9) {
+
+				$(inFontList[1]).css("margin-left", "-=90vw");
+				i++;
+				var fontFamilyChange = $(fonts[i]).css("font-family");
+				$(titleFamilyArea[1]).css("font-family", fontFamilyChange);
+
+			}
+
+		});
+
+	}
+
+	if(i < 9 && i >= 0) {
+
+		$(leftFontClick[1]).click(function() {
+
+			if(i > 0) {
+
+				$(inFontList[1]).css("margin-left", "+=90vw");
+				i--;
+				var fontFamilyChange = $(fonts[i]).css("font-family");
+				$(titleFamilyArea[1]).css("font-family", fontFamilyChange);
+
+			}
+
+		});
+
+	}
+
+}
+
+function thirdFontChange(i) {
+
+	if(i >= 0 && i < 9) {
+
+		$(rightFontClick[2]).click(function() {
+
+			if(i < 9) {
+
+				$(inFontList[2]).css("margin-left", "-=90vw");
+				i++;
+				var fontFamilyChange = $(fonts[i]).css("font-family");
+				$(titleFamilyArea[2]).css("font-family", fontFamilyChange);
+
+			}
+
+		});
+
+	}
+
+	if(i < 9 && i >= 0) {
+
+		$(leftFontClick[2]).click(function() {
+
+			if(i > 0) {
+
+				$(inFontList[2]).css("margin-left", "+=90vw");
+				i--;
+				var fontFamilyChange = $(fonts[i]).css("font-family");
+				$(titleFamilyArea[2]).css("font-family", fontFamilyChange);
+
+			}
+
+		});
+
+	}
+
+}
+
+function fourthFontChange(i) {
+
+	if(i >= 0 && i < 9) {
+
+		$(rightFontClick[3]).click(function() {
+
+			if(i < 9) {
+
+				$(inFontList[3]).css("margin-left", "-=90vw");
+				i++;
+				var fontFamilyChange = $(fonts[i]).css("font-family");
+				$(titleFamilyArea[3]).css("font-family", fontFamilyChange);
+
+			}
+
+		});
+
+	}
+
+	if(i < 9 && i >= 0) {
+
+		$(leftFontClick[3]).click(function() {
+
+			if(i > 0) {
+
+				$(inFontList[3]).css("margin-left", "+=90vw");
+				i--;
+				var fontFamilyChange = $(fonts[i]).css("font-family");
+				$(titleFamilyArea[3]).css("font-family", fontFamilyChange);
+
+			}
+
+		});
+
+	}
+
+}
+
+firstFontChange(0);
+secondFontChange(0);
+thirdFontChange(0);
+fourthFontChange(0);
 
