@@ -206,6 +206,21 @@
 		font-weight:normal;
 	}
 
+	.border-check {
+		background-color:#484848;
+		color:#f3f3f3;
+	}
+
+	.caps-lock {
+		background-color:#484848;
+		color:#f3f3f3;
+	}
+
+	.thin {
+		background-color:#484848;
+		color:#f3f3f3;
+	}
+
 	.border-check,
 	.no-border {
 		margin-top:1em;

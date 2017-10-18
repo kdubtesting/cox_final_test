@@ -436,3 +436,83 @@ secondFontChange(0);
 thirdFontChange(0);
 fourthFontChange(0);
 
+//This is the text transform editor
+var borderCheck = $(".border-check");
+var borderCheckA = new Array();
+var noBorder = $(".no-border");
+var noBorderA = new Array();
+var capLock = $(".caps-lock");
+var capLockA = new Array();
+var capUnlock = $(".caps-unlock");
+var capUnlockA = new Array();
+var normalFont = $(".normal-font");
+var normalFontA = new Array();
+var thin = $(".thin");
+var thinA = new Array();
+var bold = $(".bold");
+var boldA = new Array();
+var italic = $(".italic");
+var italicA = new Array();
+var normalWeight = $(".normal-weight");
+var normalWeightA = new Array();
+
+for(var i = 0; i < borderCheck.length; i++) {
+
+	borderCheckA[i] = borderCheck[i];
+	noBorderA[i] = noBorder[i];
+	capLockA[i] = capLock[i];
+	capUnlockA[i] = capUnlock[i];
+	normalFontA[i] = normalFont[i];
+	thinA[i] = thin[i];
+	boldA[i] = bold[i];
+	italicA[i] = italic[i];
+	normalWeightA[i] = normalWeight[i];
+
+}
+
+for(var i = 0; i < borderCheck.length; i++) {
+
+	$(borderCheck[i]).click(function() {
+
+		var n = borderCheckA.indexOf(this);
+
+		$(borderCheck[n]).css("background-color", "#484848");
+		$(borderCheck[n]).css("color", "#f3f3f3");
+
+		$(noBorder[n]).css("background-color", "transparent");
+		$(noBorder[n]).css("color", "#484848");
+
+		if(n == 0) {
+
+			$("#title-pre").css("border", "2px solid #fff");
+
+		}
+
+	});
+
+}
+
+for(var i = 0; i < noBorder.length; i++) {
+
+	$(noBorder[i]).click(function() {
+
+		var n = noBorderA.indexOf(this);
+
+		$(noBorder[n]).css("background-color", "#484848");
+		$(noBorder[n]).css("color", "#f3f3f3");
+
+		$(borderCheck[n]).css("background-color", "transparent");
+		$(borderCheck[n]).css("color", "#484848");
+
+		if(n == 0) {
+
+			$("#title-pre").css("border", "2px solid transparent");
+
+		}
+
+	});
+
+}
+
+
+
