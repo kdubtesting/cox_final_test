@@ -85,7 +85,10 @@ for(var i = 0; i < fontButton.length; i++) {
 
 			fontTextP++;
 
-			//$("#title-pre").css("font-size", fontTextP + "px");
+			$("#single-date-pre").css("font-size", fontTextP + "px");
+			$("#first-date-pre").css("font-size", fontTextP + "px");
+			$("#between-text-pre").css("font-size", fontTextP + "px");
+			$("#second-date-pre").css("font-size", fontTextP + "px");
 
 			if(fontTextP <= 35) {
 
@@ -103,7 +106,10 @@ for(var i = 0; i < fontButton.length; i++) {
 
 			fontTextP--;
 
-			//$("#button-pre").css("font-size", fontTextP + "px");
+			$("#single-date-pre").css("font-size", fontTextP + "px");
+			$("#first-date-pre").css("font-size", fontTextP + "px");
+			$("#between-text-pre").css("font-size", fontTextP + "px");
+			$("#second-date-pre").css("font-size", fontTextP + "px");
 
 			if(fontTextP >= 10) {
 
@@ -239,6 +245,30 @@ $("#multiple-dates").click(function() {
 	$("#single-date-pre").css("display", "none");
 	$("#multiple-date-setup").css("display", "block");
 
+
+});
+
+//This will change the text for the first date editor
+$("#first-date-editor").keyup(function() {
+
+	var textChange = $(this).val();
+	$("#first-date-pre").html(textChange);
+
+});
+
+//This is the between text for the multiple date
+$("#bet-text-editor").keyup(function() {
+
+	var textChange = $(this).val();
+	$("#between-text-pre").html(textChange);
+
+});
+
+//This is the text for the second date editor
+$("#second-date-editor").keyup(function() {
+
+	var textChange = $(this).val();
+	$("#second-date-pre").html(textChange);
 
 });
 
