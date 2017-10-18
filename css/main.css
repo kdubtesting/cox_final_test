@@ -97,12 +97,15 @@ html, body {
 	margin-top:3px;
 }
 
-@media only screen and (min-width:769px) {
-
-	#back-button {
-		display:none;
-	}
-
+#open-sub-menu {
+	width:3.5em;
+	height:3.5em;
+	position:absolute;
+	z-index:1000000;
+	right:0px;
+	top:0px;
+	text-align:center;
+	overflow:hidden;
 }
 
 @media only screen and (max-width:425px) {
@@ -282,6 +285,10 @@ html, body {
 		text-align:center;
 	}
 
+	.close-section > img {
+		margin-top:20.5px;
+	}
+
 	.tool-open-section {
 		width:4em;
 		height:4em;
@@ -293,6 +300,10 @@ html, body {
 		right:8em;
 	}
 
+	.tool-open-section > img {
+		margin-top:15px;
+	}
+
 	.help-open-section {
 		width:4em;
 		height:4em;
@@ -302,6 +313,10 @@ html, body {
 		text-align:center;
 		top:0px;
 		right:4em;
+	}
+
+	.help-open-section > img {
+		margin-top:15px;
 	}
 
 	.close-help-section {
@@ -318,6 +333,11 @@ html, body {
 }
 
 @media only screen and (max-width:768px) {
+
+	/*These are title options to open the mobile tool section*/
+	#back-button {
+		display:none;
+	}
 
 	/*This is actual tool section*/
 	#mobile-tools-section {
@@ -418,6 +438,12 @@ html, body {
 		position:relative;
 		margin:auto;
 		margin-top:1em;
+	}
+
+	#background-preview-demo-display {
+		width:95vw;
+		position:relative;
+		overflow:hidden;
 	}
 
 }
