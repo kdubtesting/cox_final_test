@@ -129,7 +129,7 @@ html, body {
 		height:calc(100vh - 6em);
 		position:absolute;
 		z-index:100;
-		bottom:2.5em;
+		bottom:100vh;
 		left:0px;
 		background-color:#fff;
 		overflow-x:hidden;
@@ -751,7 +751,7 @@ html, body {
 		background-color:#fff;
 		position:absolute;
 		z-index:100000;
-		bottom:0vh;
+		bottom:100vh;
 		left:0px;
 	}
 
@@ -928,6 +928,16 @@ html, body {
 	/*This will open the sub menu*/
 	#open-sub-menu {
 		display:none;
+	}
+
+	#close-title {
+		width:3.5em;
+		height:3.5em;
+		position:absolute;
+		top:0px;
+		left:0px;
+		overflow:hidden;
+		text-align:center;
 	}
 
 	/*---------------------------

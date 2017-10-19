@@ -906,12 +906,25 @@ for(var i = 0; i < headSection.length; i++) {
 
 }
 
-$("#title-button").click(function() {
+if(winW > 768) {
 
-	$("#tools-section").css("bottom", "2.5em");
-	$("#sub-menu-options").css("bottom", "0em");
+	$("#title-button").click(function() {
 
-});
+		$("#tools-section").css("bottom", "2.5em");
+		$("#sub-menu-options").css("bottom", "0em");
+
+	});
+
+} else {
+
+	$("#title-button").click(function() {
+
+		$("#main-menu").css("bottom", "2.5em");
+		$("#sub-menu-options").css("bottom", "0em");
+
+	});
+
+}
 
 //This will click through the editor tools when the screen
 //is larger than a tablet
