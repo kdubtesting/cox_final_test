@@ -771,7 +771,7 @@ for(var i = 0; i < normalWeight.length; i++) {
 $("#back-button").click(function() {
 
 	$(this).css("display", "none");
-	$("#mobile-tools-section").css("bottom", "100vh");
+	$("#tools-section").css("bottom", "100vh");
 	$(".specific-tools-section").css("display", "none");
 
 });
@@ -837,7 +837,7 @@ for(var i = 0; i < toolOpenSection.length; i++) {
 
 		var n = toolOpenSectionA.indexOf(this);
 
-		$("#mobile-tools-section").css("bottom", "2.5em");
+		$("#tools-section").css("bottom", "2.5em");
 		$("#back-button").css("display", "block");
 		$(specificToolSection[n]).css("display", "block");
 
@@ -895,6 +895,13 @@ for(var i = 0; i < headSection.length; i++) {
 	});
 
 }
+
+$("#title-button").click(function() {
+
+	$("#mobile-tools-section").css("bottom", "2.5em");
+	$("#menu-options-mobile").css("bottom", "0em");
+
+});
 
 
 
