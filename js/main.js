@@ -2,6 +2,16 @@ var winW = $(window).width();
 
 var leftSide = $(".left-side-tools");
 
+//This will position the body info to the exact center
+//of the screen
+var bodyInfoArea = $("#body-info-area").css("height");
+var bodyInfoAreaP = parseInt(bodyInfoArea);
+var winH = $(window).height();
+
+var remain = ((winH - bodyInfoAreaP) / 2);
+
+$("#body-info-area").css("top", remain + "px");
+
 //This is the mobile menu to open the tools
 var mobileHead = $(".mobile-heading");
 var mobileHeadA = new Array();

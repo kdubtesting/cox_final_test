@@ -128,6 +128,7 @@ html, body {
 		width:100vw;
 		height:calc(100vh - 6em);
 		position:absolute;
+		z-index:100;
 		bottom:2.5em;
 		left:0px;
 		background-color:#fff;
@@ -764,7 +765,108 @@ html, body {
 
 	.menu-icon > img {
 		margin-top:7.5px;
-	 }
+	}
+
+	/*---------------------------
+	This the main body area of website
+	---------------------------*/
+	#main-body {
+		width:100vw;
+		height:100vh;
+		overflow:hidden;
+	}
+
+	#body-area {
+		width:100%;
+		height:100%;
+		box-shadow:inset 0 0 0 800px rgba(0,0,0,0.4);
+		background-repeat:no-repeat;
+		background-size:cover;
+		background-position:center center;
+		background-image:url("../img/hotel_1.jpg");
+	}
+
+	#body-info-area {
+		width:95vw;
+		height:auto;
+		padding-top:1em;
+		padding-bottom:1em;
+		position:absolute;
+		left:2.5vw;
+		top:0px;
+		text-align:center;
+		overflow:hidden;
+		box-shadow:inset 0 0 0 800px rgba(0,0,0,0.4), 0 0 5px #000;
+	}
+
+	#body-info-title {
+		margin-top:0px;
+		margin-bottom:0px;
+	}
+
+	#body-info-title {
+		font-size:21px;
+		color:#fff;
+		font-weight:lighter;
+		padding:5px 15px;
+		border:2px solid #fff;
+		margin-top:1em;
+		margin-bottom:0px;
+		display:inline-block;
+	}
+
+	#body-date {
+		font-size:18px;
+		color:#fff;
+		font-weight:lighter;
+		text-transform:uppercase;
+		color:#fff;
+		margin-top:1em;
+		margin-bottom:0px;
+	}
+
+	#body-hotel-and-room-info {
+		width:60%;
+		text-align:center;
+		overflow:hidden;
+		margin:auto;
+		margin-bottom:0px;
+	}
+
+	#hotel-name {
+		color:#fff;
+		font-weight:lighter;
+		text-transform:uppercase;
+		margin-top:1em;
+		margin-bottom:1em;
+		font-size:16px;
+	}
+
+	#body-hotel-and-room-info > hr {
+		width:60%;
+		height:2px;
+	}
+
+	#room-number {
+		color:#fff;
+		font-weight:lighter;
+		text-transform:uppercase;
+		margin-top:1em;
+		margin-bottom:1em;
+		font-size:16px;
+	}
+
+	#body-info-web-link {
+		padding:5px 15px;
+		border:2px solid #fff;
+		color:#fff;
+		font-size:16px;
+		background-color:transparent;
+		outline:none;
+		text-transform:uppercase;
+		font-weight:lighter;
+		margin-top:1em;
+	}
 
 }
 
@@ -837,6 +939,7 @@ html, body {
 		width:100vw;
 		height:calc(100vh - 6em);
 		position:absolute;
+		z-index:100;
 		bottom:2.5em;
 		left:0px;
 		background-color:#fff;
@@ -1483,6 +1586,107 @@ html, body {
 		margin-top:7.5px;
 	 }
 
+	/*---------------------------
+	This the main body area of website
+	---------------------------*/
+	#main-body {
+		width:100vw;
+		height:100vh;
+		overflow:hidden;
+	}
+
+	#body-area {
+		width:100%;
+		height:100%;
+		box-shadow:inset 0 0 0 800px rgba(0,0,0,0.4);
+		background-repeat:no-repeat;
+		background-size:cover;
+		background-position:center center;
+		background-image:url("../img/hotel_1.jpg");
+	}
+
+	#body-info-area {
+		width:70vw;
+		height:auto;
+		padding-top:1em;
+		padding-bottom:1em;
+		position:absolute;
+		left:20vw;
+		top:0px;
+		text-align:center;
+		overflow:hidden;
+		box-shadow:inset 0 0 0 800px rgba(0,0,0,0.4), 0 0 5px #000;
+	}
+
+	#body-info-title {
+		margin-top:0px;
+		margin-bottom:0px;
+	}
+
+	#body-info-title {
+		font-size:21px;
+		color:#fff;
+		font-weight:lighter;
+		padding:5px 15px;
+		border:2px solid #fff;
+		margin-top:1em;
+		margin-bottom:0px;
+		display:inline-block;
+	}
+
+	#body-date {
+		font-size:18px;
+		color:#fff;
+		font-weight:lighter;
+		text-transform:uppercase;
+		color:#fff;
+		margin-top:1em;
+		margin-bottom:0px;
+	}
+
+	#body-hotel-and-room-info {
+		width:60%;
+		text-align:center;
+		overflow:hidden;
+		margin:auto;
+		margin-bottom:0px;
+	}
+
+	#hotel-name {
+		color:#fff;
+		font-weight:lighter;
+		text-transform:uppercase;
+		margin-top:1em;
+		margin-bottom:1em;
+		font-size:16px;
+	}
+
+	#body-hotel-and-room-info > hr {
+		width:60%;
+		height:2px;
+	}
+
+	#room-number {
+		color:#fff;
+		font-weight:lighter;
+		text-transform:uppercase;
+		margin-top:1em;
+		margin-bottom:1em;
+		font-size:16px;
+	}
+
+	#body-info-web-link {
+		padding:5px 15px;
+		border:2px solid #fff;
+		color:#fff;
+		font-size:16px;
+		background-color:transparent;
+		outline:none;
+		text-transform:uppercase;
+		font-weight:lighter;
+		margin-top:1em;
+	}
+
 }
 
 /*This is the latop and computer styles of the editor*/
@@ -1607,7 +1811,7 @@ html, body {
 		position:absolute;
 		z-index:10000000;
 		left:0px;
-		bottom:2.5em;
+		bottom:100vh;
 		transition:all 0.5s ease;
 		-webkit-overflow-scrolling:touch;
 	}
@@ -2139,7 +2343,7 @@ html, body {
 		background-color:#fff;
 		position:absolute;
 		z-index:100000;
-		bottom:0vh;
+		bottom:100vh;
 		left:0px;
 	}
 
@@ -2154,6 +2358,107 @@ html, body {
 	.menu-icon > img {
 		margin-top:7.5px;
 	 }
+
+	/*---------------------------
+	This the main body area of website
+	---------------------------*/
+	#main-body {
+		width:100vw;
+		height:100vh;
+		overflow:hidden;
+	}
+
+	#body-area {
+		width:100%;
+		height:100%;
+		box-shadow:inset 0 0 0 800px rgba(0,0,0,0.4);
+		background-repeat:no-repeat;
+		background-size:cover;
+		background-position:center center;
+		background-image:url("../img/hotel_1.jpg");
+	}
+
+	#body-info-area {
+		width:60vw;
+		height:auto;
+		padding-top:1em;
+		padding-bottom:1em;
+		position:absolute;
+		left:20vw;
+		top:0px;
+		text-align:center;
+		overflow:hidden;
+		box-shadow:inset 0 0 0 800px rgba(0,0,0,0.4), 0 0 5px #000;
+	}
+
+	#body-info-title {
+		margin-top:0px;
+		margin-bottom:0px;
+	}
+
+	#body-info-title {
+		font-size:21px;
+		color:#fff;
+		font-weight:lighter;
+		padding:5px 15px;
+		border:2px solid #fff;
+		margin-top:1em;
+		margin-bottom:0px;
+		display:inline-block;
+	}
+
+	#body-date {
+		font-size:18px;
+		color:#fff;
+		font-weight:lighter;
+		text-transform:uppercase;
+		color:#fff;
+		margin-top:1em;
+		margin-bottom:0px;
+	}
+
+	#body-hotel-and-room-info {
+		width:60%;
+		text-align:center;
+		overflow:hidden;
+		margin:auto;
+		margin-bottom:0px;
+	}
+
+	#hotel-name {
+		color:#fff;
+		font-weight:lighter;
+		text-transform:uppercase;
+		margin-top:1em;
+		margin-bottom:1em;
+		font-size:16px;
+	}
+
+	#body-hotel-and-room-info > hr {
+		width:60%;
+		height:2px;
+	}
+
+	#room-number {
+		color:#fff;
+		font-weight:lighter;
+		text-transform:uppercase;
+		margin-top:1em;
+		margin-bottom:1em;
+		font-size:16px;
+	}
+
+	#body-info-web-link {
+		padding:5px 15px;
+		border:2px solid #fff;
+		color:#fff;
+		font-size:16px;
+		background-color:transparent;
+		outline:none;
+		text-transform:uppercase;
+		font-weight:lighter;
+		margin-top:1em;
+	}
 
 }
 
