@@ -17,6 +17,63 @@ var mobileHead = $(".mobile-heading");
 var mobileHeadA = new Array();
 var mobileMenu = $(".mobile-menu");
 
+//This will change the background image
+function imageBackSlide(i) {
+
+	$("#image-right-click").click(function() {
+
+		if(i < 6) {
+
+			$("#in-background-image-selector").css("margin-left", "-=90vw");
+			i++;
+
+		}
+
+	});
+
+	$("#image-left-click").click(function() {
+
+		if(i > 1) {
+
+			$("#in-background-image-selector").css("margin-left", "+=90vw");
+			i--;
+			
+		}
+
+
+	});
+
+}
+
+imageBackSlide(1);
+
+var checkImage = $(".check-image");
+var checkImageA = new Array();
+var unCheckImage = $(".uncheck-image");
+var unCheckImageA = new Array();
+var imageSelection = $(".image-selection");
+
+for(var i = 0; i < checkImage.length; i++) {
+
+	checkImageA[i] = checkImage[i];
+	unCheckImageA[i] = unCheckImage[i];
+
+}
+
+for(var i = 0; i < checkImage.length; i++) {
+
+	$(checkImage[i]).click(function() {
+
+		var n = checkImageA.indexOf(this);
+
+		var backImage = $(imageSelection[n]).css("background-image");
+
+		$("#background-preview").css("background-image", backImage);
+
+	});
+
+}
+
 //This will change the text for the convention title
 $("#title-editor").keyup(function() {
 
