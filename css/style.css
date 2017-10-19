@@ -1229,23 +1229,27 @@ html, body {
 	/*This is the title transform editor*/
 
 	.font-setup {
-		width:85%;
+		width:70%;
 		height:auto;
 		display:flex;
 		justify-content:space-between;
+		flex-wrap:wrap;
 		margin:auto;
 		margin-top:1em;
 		margin-bottom:1em;
+		text-align:center;
 	}
 
 	.font-thickness {
-		width:85%;
+		width:70%;
 		height:auto;
 		display:flex;
 		justify-content:space-between;
+		flex-wrap:wrap;
 		margin:auto;
 		margin-top:1em;
 		margin-bottom:1em;
+		text-align:center;
 	}
 
 	#text-transform-demo {
@@ -1273,8 +1277,11 @@ html, body {
 		outline:none;
 		color:#484848;
 		text-transform:uppercase;
+		margin:auto;
+		margin-top:0.5em;
 		font-weight:normal;
 		font-size:14px;
+		text-align:center;
 	}
 
 	.border-check {
