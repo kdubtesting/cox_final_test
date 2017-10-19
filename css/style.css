@@ -116,14 +116,7 @@ html, body {
 
 	/*This will open the sub menu*/
 	#open-sub-menu {
-		width:3.5em;
-		height:3.5em;
-		position:absolute;
-		z-index:1000000;
-		right:0px;
-		top:0px;
-		text-align:center;
-		overflow:hidden;
+		display:none;
 	}
 
 	/*---------------------------
@@ -832,14 +825,7 @@ html, body {
 
 	/*This will open the sub menu*/
 	#open-sub-menu {
-		width:3.5em;
-		height:3.5em;
-		position:absolute;
-		z-index:1000000;
-		right:0px;
-		top:0px;
-		text-align:center;
-		overflow:hidden;
+		display:none;
 	}
 
 	/*---------------------------
@@ -1564,6 +1550,31 @@ html, body {
 		top:0px;
 		text-align:center;
 		overflow:hidden;
+		box-shadow:inset 0 0 0 1px #000;
+	}
+
+	#right-menu-click {
+		width:3.5em;
+		height:3.5em;
+		position:absolute;
+		z-index:1000000;
+		right:3.5em;
+		top:0px;
+		text-align:center;
+		overflow:hidden;
+		box-shadow:inset 0 0 0 1px #000;
+	}
+
+	#left-menu-click {
+		width:3.5em;
+		height:3.5em;
+		position:absolute;
+		z-index:1000000;
+		right:7em;
+		top:0px;
+		text-align:center;
+		overflow:hidden;
+		box-shadow:inset 0 0 0 1px #000;
 	}
 
 	/*---------------------------
@@ -1596,7 +1607,7 @@ html, body {
 		position:absolute;
 		z-index:10000000;
 		left:0px;
-		bottom:100vh;
+		bottom:2.5em;
 		transition:all 0.5s ease;
 		-webkit-overflow-scrolling:touch;
 	}
@@ -1610,7 +1621,7 @@ html, body {
 
 	/*These hold all the tools per section*/
 	.specific-tools-section {
-		display:none;
+		display:block;
 		float:left;
 		overflow-y:scroll;
 		width:100vw;
@@ -1801,7 +1812,7 @@ html, body {
 	}
 
 	.family-test-block {
-		width:70%;
+		width:100%;
 		height:auto;
 		padding:0.25em 0px;
 		margin:auto;
@@ -1836,13 +1847,13 @@ html, body {
 	}
 
 	.in-font-list {
-		width:1000%;
+		width:48vw;
 		height:3em;
 		margin-left:0vw;
 	}
 
 	.font-option {
-		width:90vw;
+		width:100%;
 		height:3em;
 		overflow:hidden;
 		text-align:center;

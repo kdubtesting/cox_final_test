@@ -792,9 +792,9 @@ for(var i = 0; i < menuIcon.length; i++) {
 
 		if(n == 0) {
 
-			$("#menu-options-mobile").css("bottom", "-3em");
-			$("#mobile-tools-section").css("bottom", "100vh");
-			$("#main-menu-mobile").css("bottom", "100vh");
+			$("#sub-menu-options").css("bottom", "-3em");
+			$("#tools-section").css("bottom", "100vh");
+			$("#main-menu").css("bottom", "100vh");
 
 		}
 
@@ -898,11 +898,41 @@ for(var i = 0; i < headSection.length; i++) {
 
 $("#title-button").click(function() {
 
-	$("#mobile-tools-section").css("bottom", "2.5em");
-	$("#menu-options-mobile").css("bottom", "0em");
+	$("#tools-section").css("bottom", "2.5em");
+	$("#sub-menu-options").css("bottom", "0em");
 
 });
 
+//This will click through the editor tools when the screen
+//is larger than a tablet
+
+function editorSlide(i) {
+
+	$("#right-menu-click").click(function() {
+
+		if(i < 7) {
+
+			$("#in-tools-section").css("margin-left", "-=100vw");
+			i++;
+
+		}
+
+	});
+
+	$("#left-menu-click").click(function() {
+
+		if(i > 0) {
+
+			$("#in-tools-section").css("margin-left", "+=100vw");
+			i--;
+
+		}
+
+	});
+
+}
+
+editorSlide(0);
 
 
 
