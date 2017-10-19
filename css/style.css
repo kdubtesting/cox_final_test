@@ -328,6 +328,41 @@ html, body {
 		background-image:url("../img/hotel_1.jpg");
 	}
 
+	#background-image-selector {
+		width:100%;
+		height:20em;
+		overflow:hidden;
+		position:relative;
+	}
+
+	#in-background-image-selector {
+		width:calc(6 * 90vw);
+		height:100%;
+	}
+
+	.left-click {
+		width:3em;
+		height:3em;
+		background-color:#fff;
+		border-radius:50%;
+		position:absolute;
+		box-shadow:0 0 5px #484848;
+		left:-1.5em;
+		top:calc(17em / 2);
+	}
+
+	.right-click {
+		width:3em;
+		height:3em;
+		background-color:#fff;
+		border-radius:50%;
+		position:absolute;
+		box-shadow:0 0 5px #484848;
+		right:-1.5em;
+		top:calc(17em / 2);
+	}
+
+
 	/*---------------------------
 	These are the title editor tools
 	---------------------------*/
