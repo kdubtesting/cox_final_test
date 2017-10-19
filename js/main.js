@@ -18,34 +18,65 @@ var mobileHeadA = new Array();
 var mobileMenu = $(".mobile-menu");
 
 //This will change the background image
-function imageBackSlide(i) {
+function imageBackSlide(win, i) {
 
-	$("#image-right-click").click(function() {
+	if(win <= 768) {
 
-		if(i < 6) {
+		$("#image-right-click").click(function() {
 
-			$("#in-background-image-selector").css("margin-left", "-=90vw");
-			i++;
+			if(i < 6) {
 
-		}
+				$("#in-background-image-selector").css("margin-left", "-=90vw");
+				i++;
 
-	});
+			}
 
-	$("#image-left-click").click(function() {
+		});
 
-		if(i > 1) {
+		$("#image-left-click").click(function() {
 
-			$("#in-background-image-selector").css("margin-left", "+=90vw");
-			i--;
-			
-		}
+			if(i > 1) {
+
+				$("#in-background-image-selector").css("margin-left", "+=90vw");
+				i--;
+				
+			}
 
 
-	});
+		});
+
+	}
+
+	if(win > 768) {
+
+		$("#image-right-click").click(function() {
+
+			if(i < 6) {
+
+				$("#in-background-image-selector").css("margin-left", "-=48vw");
+				i++;
+
+			}
+
+		});
+
+		$("#image-left-click").click(function() {
+
+			if(i > 1) {
+
+				$("#in-background-image-selector").css("margin-left", "+=48vw");
+				i--;
+				
+			}
+
+
+		});
+
+	}
 
 }
 
-imageBackSlide(1);
+imageBackSlide(winW, 1);
 
 var checkImage = $(".check-image");
 var checkImageA = new Array();

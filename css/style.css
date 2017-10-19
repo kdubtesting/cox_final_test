@@ -501,6 +501,8 @@ html, body {
 		box-shadow:0 0 5px #484848;
 		margin:auto;
 		margin-top:0.5em;
+		text-align:center;
+		overflow:hidden;
 	}
 
 	.family-test-block {
@@ -1433,6 +1435,11 @@ html, body {
 		background-color:#484848;
 	}
 
+	.left-font-click > img{
+		transform:rotate(180deg);
+		margin-top:calc((3em - 20px) / 2);
+	}
+
 	.right-font-click {
 		width:3em;
 		height:3em;
@@ -1440,6 +1447,10 @@ html, body {
 		top:0px;
 		right:0px;
 		background-color:#484848;
+	}
+
+	.right-font-click > img {
+		margin-top:calc((3em - 20px) / 2);
 	}
 
 	.in-font-list {
@@ -2085,12 +2096,12 @@ html, body {
 	}
 
 	#in-background-image-selector {
-		width:calc(7 * 90vw);
+		width:calc(7 * 48vw);
 		height:100%;
 	}
 
 	.image-selection {
-		width:90vw;
+		width:48vw;
 		height:100%;
 		float:left;
 		background-repeat:no-repeat;
@@ -2278,6 +2289,11 @@ html, body {
 		background-color:#484848;
 	}
 
+	.left-font-click > img{
+		transform:rotate(180deg);
+		margin-top:calc((3em - 20px) / 2);
+	}
+
 	.right-font-click {
 		width:3em;
 		height:3em;
@@ -2285,6 +2301,10 @@ html, body {
 		top:0px;
 		right:0px;
 		background-color:#484848;
+	}
+
+	.right-font-click > img {
+		margin-top:calc((3em - 20px) / 2);
 	}
 
 	.in-font-list {
