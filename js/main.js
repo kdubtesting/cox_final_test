@@ -306,11 +306,11 @@ $("#single-date").click(function() {
 
 	var leftSideChild = $(leftSide[1]).children();
 
-	$(leftSideChild[2]).css("display", "block");
+	$("#single-date-editor-area").css("display", "block");
 
-	$(leftSideChild[3]).css("display", "none");
-	$(leftSideChild[4]).css("display", "none");
-	$(leftSideChild[5]).css("display", "none");
+	$("#first-date-style").css("display", "none");
+	$("#second-date-style").css("display", "none");
+	$("#bet-text-style").css("display", "none");
 	
 	$("#single-date-pre").css("display", "block");
 	$("#multiple-date-setup").css("display", "none");
@@ -336,11 +336,11 @@ $("#multiple-dates").click(function() {
 
 	var leftSideChild = $(leftSide[1]).children();
 
-	$(leftSideChild[2]).css("display", "none");
+	$("#single-date-editor-area").css("display", "none");
 	
-	$(leftSideChild[3]).css("display", "block");
-	$(leftSideChild[4]).css("display", "block");
-	$(leftSideChild[5]).css("display", "block");
+	$("#first-date-style").css("display", "block");
+	$("#second-date-style").css("display", "block");
+	$("#bet-text-style").css("display", "block");
 
 	$("#single-date-pre").css("display", "none");
 	$("#multiple-date-setup").css("display", "block");
