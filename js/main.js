@@ -225,7 +225,8 @@ for(var i = 0; i < fontButton.length; i++) {
 
 			fontTextP++;
 
-			//$("#title-pre").css("font-size", fontTextP + "px");
+			$("#hotel-name-pre").css("font-size", fontTextP + "px");
+			$("#room-number-pre").css("font-size", fontTextP + "px");
 
 			if(fontTextP <= 35) {
 
@@ -243,7 +244,8 @@ for(var i = 0; i < fontButton.length; i++) {
 
 			fontTextP--;
 
-			//$("#button-pre").css("font-size", fontTextP + "px");
+			$("#hotel-name-pre").css("font-size", fontTextP + "px");
+			$("#room-number-pre").css("font-size", fontTextP + "px");
 
 			if(fontTextP >= 10) {
 
@@ -1013,6 +1015,27 @@ if(winW > 768) {
 	});
 
 }
+
+/*-------------------------
+This is the hotel room changer-
+--------------------------*/
+//This will change the text for the hotel name editor
+$("#hotel-editor").keyup(function() {
+
+	var textChange = $(this).val();
+	$("#hotel-name-pre").html(textChange);
+
+});
+
+
+//This will change the text for the hotel room editor
+$("#hotel-room-text-editor").keyup(function() {
+
+	var textChange = $(this).val();
+	$("#room-number-pre").html(textChange);
+
+});
+
 
 //This will click through the editor tools when the screen
 //is larger than a tablet
